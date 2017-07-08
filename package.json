@@ -1,0 +1,55 @@
+{
+  "name": "Gulp",
+  "version": "1.0.0",
+  "description": "Simple gulpfile",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "surge -p build -d skvs.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larshoie/SKVS"
+  },
+  "keywords": [
+    "gulp",
+    "scss",
+    "js",
+    "responsive-images"
+  ],
+  "author": "Lars Høie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larshoie/SKVS/issues"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-if": "^2.0.1",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-kit": "^0.3.0",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-npm-run": "0.0.3",
+    "gulp-order": "^1.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pretty-url": "^0.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-responsive": "^2.4.0",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.0",
+    "gulp-webp": "^2.3.0",
+    "imagemin-pngquant": "^5.0.0",
+    "takana": "^0.5.4",
+    "vinyl": "^1.2.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "surge": "^0.18.0"
+  }
+}

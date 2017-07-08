@@ -1,0 +1,86 @@
+// NYTTTTTT
+.artikkel .tittel {
+    font-size: 6vw;
+    font-size: 10vw;
+    margin-left: 8vw;
+    margin-bottom: 2vw;
+    margin-top: 25vh;
+    width: 60vw;
+    letter-spacing: 1px;
+    line-height: 0.85;
+    text-transform: uppercase;
+    color: #f0e9cc;
+}
+
+.artikkel figure {
+    margin: 0;
+    margin-left: 32.7vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    float: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.artikkel .cover-image {
+    display: block !important;
+    height: 120vh;
+    margin-top: -5vw;
+    margin-left: 5vw;
+}
+
+.artikkel .cover-image img {
+    //max-height: 120vh;
+    width: 100%;
+    object-fit: cover;
+    float: right;
+    padding-right: 0vw;
+    margin-bottom: 2vw;
+}
+
+.artikkel figure {
+    margin: 0;
+    margin-left: 32.7vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    float: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.artikkel figure img {
+  object-fit: contain;
+    //max-height: 80vh;
+    height: 100%;
+    width: 40vw;
+    margin-left: 0;
+    mix-blend-mode: multiply;
+}
+
+.artikkel figure figcaption {
+    float: right;
+    font-size: 0.8vw;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    padding: 0;
+    width: 16vw;
+    margin-left: 2vw;
+    margin-right: 5vw;
+}
+
+// .topp-meny {
+//     background: transparent;
+// }
+
+.footnote {
+  margin-right: 0;
+  padding: 0;
+  right: 2vw!important;
+  top: 5vw!important;
+  width: 12vw!important;
+  color: $ident!important;
+}

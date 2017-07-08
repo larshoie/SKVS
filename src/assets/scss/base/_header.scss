@@ -1,0 +1,161 @@
+.main-header {
+  width: 100%;
+  position: fixed;
+  height: 6.5vw;
+  background: $bg;
+  top: 0;
+  z-index: 200;
+  line-height: 1.25;
+  a {
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-color: $ident;
+    }
+  }
+}
+
+
+.logo {
+  // align-self: center;
+  // text-align: center;
+  font-size: $big;
+  position: fixed;
+  top: 4vw;
+  top: 1.6vw;
+  left: 2vw;
+    z-index: 999;
+    -webkit-text-stroke: 0.09vw $main;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+
+  a {
+    //color: $ident;
+    border-color: transparent!important;
+    &:hover {
+      border-color: transparent;
+      -webkit-text-stroke: 0vw $main;
+      -webkit-text-fill-color: $main;
+    }
+  }
+}
+
+.intro {
+  text-indent: 42.3vw;
+  position: fixed;
+  width: 70vw;
+  left: 2vw;
+  top: 1.6vw;
+  line-height: 1.4;
+    line-height: 1.2;
+  font-size: $big;
+  z-index: 200;
+  pointer-events: none;
+  p {
+    margin: 0;
+  }
+}
+.org-name {
+  display: none;
+}
+
+
+
+
+
+
+// header .search-btn {
+//   color: $ident;
+// }
+
+.search-btn {
+  margin: 0;
+  cursor: pointer;
+  display: inline;
+  transition: all .2s;
+  @extend a;
+  &:hover {
+    @extend a;
+  }
+}
+
+
+
+.main-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    right: 2vw;
+    top: 2.2vw;
+    width: 16vw;
+    height: 4vw;
+    flex-wrap: wrap;
+    z-index: 999;
+  a {
+    align-self: flex-start;
+    //border: none;
+    border-color: transparent;
+    &:hover {
+      border-color: $main;
+    }
+  }
+}
+
+.right {
+  position: fixed;
+  //right: 17vw;
+  //top: 1.4vw;
+  right: 2vw;
+  //top: 26vw;
+    bottom: 2vw;
+  width: 7vw;
+  height: auto;
+  //display: none;
+  line-height: 1.5;
+  z-index: 999;
+}
+
+.lang {
+  a {
+    width: 7vw;
+    display: block;
+    padding-left: 0.4vw;
+  }
+}
+
+.lang-select-thing {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+    text-align: right;
+    //text-align: left;
+  cursor: pointer;
+  .dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  span {
+    //@extend a;
+  }
+  a {
+    padding: 0!important;
+    border: 0;
+    &:hover {
+      border: 0;
+    }
+  }
+}
+
+.lang .full {
+  display: none;
+}
+
+.lang a:hover .full {
+  display: block;
+}
+.lang a:hover .in {
+  display: none;
+}

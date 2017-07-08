@@ -1,0 +1,49 @@
+input {
+  font-family: $font!important;
+}
+
+input[type=text] {
+  border: none;
+  font-size: inherit;
+  color: $ident;
+}
+input[type=text]:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $ident;
+}
+input[type=text]::placeholder {
+  color: $ident;
+}
+
+.newsletter-box {
+  padding-top: 2vw;
+}
+.newsletter {
+  border: 1px solid #000!important;
+  padding: 0.5vw;
+  height: 3vw;
+  margin: 0;
+  position: relative;
+  top: 0;
+}
+.newsletter:placeholder {
+  color: #000!important;
+}
+.newsletter:focus {
+  color: #000!important;
+}
+
+.send {
+  font-size: inherit;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: 1px solid #000!important;
+  background: $light;
+  height: 3vw;
+  padding: 0 1vw;
+  margin: 0;
+  position: relative;
+  top: 0px;
+}

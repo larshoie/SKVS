@@ -1,0 +1,123 @@
+.freeze{
+    position: fixed;
+    width: 100%;
+    //overflow-y: scroll;
+}
+
+ .modals {
+  .sub {
+      display: none;
+      .modal-wrap {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        //height: 100vh;
+        min-height: 100vh;
+        padding: 10vw;
+        padding: 2vw;
+        overflow: hidden;
+        z-index: 1000;
+        //opacity: 0.9;
+        background: $light;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        .center {
+          align-self: center;
+          width: 100vw;
+        }
+      }
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    font-size: inherit;
+    color: $main;
+    padding: 0.5vw 0;
+    font-size: 3vw;
+    //border-bottom: 0.3vw solid;
+    border-bottom:  1px solid;
+    border: none;
+    width: 35%;
+    transition: all .2s;
+  }
+  input[type=email] {
+    //width: 50.18%;
+    width: 52.227%;
+    transition: all .2s;
+  }
+  input[type=search] {
+    width: 100%;
+    transition: all .2s;
+    &:hover {
+      color: $main;
+      transition: all .2s;
+    }
+  }
+  input[type=submit] {
+    background: transparent;
+    text-align: left;
+    // border-bottom: 0.3vw solid;
+    // border-bottom: 1px solid;
+    // color: $ident;
+    // padding-left: 2vw;
+    // border: 0;
+    width: auto;
+    transition: border-color .2s;
+  }
+  input::placeholder {
+    color: $main;
+    border-color: $ident;
+    transition: all .2s;
+  }
+  input:hover {
+    color: $ident;
+    transition: all.2s;
+  }
+  input:focus {
+    // border: 0;
+    outline: none;
+    color: $main;
+    border-bottom: 1px solid;
+    border-color: $ident!important;
+    transition: all .2s;
+  }
+  input[type=submit]:focus {
+    outline: none;
+    color: $ident;
+    border-bottom: none;
+    transition: all .2s;
+  }
+  .modal-tittel {
+    position: fixed;
+    top: 1.7vw;
+    left: 2vw;
+    padding: 1vw 1vw 0.8vw 1vw;
+    padding: 0;
+    // border-bottom: 1px solid;
+    cursor: pointer;
+    color: $ident;
+    display: none;
+  }
+  // .close {
+  //   position: fixed;
+  //   top: 1.7vw;
+  //   left: 2vw;
+  //   padding: 1vw 1vw 0.8vw 1vw;
+  //   padding: 0;
+  //   border-bottom: 1px solid;
+  //   cursor: pointer;
+  //   z-index: 3000;
+  //   &:hover {
+  //     border-color: $ident;
+  //   }
+  // }
+  .arrow {
+    display: inline;
+    font-size: 2vw;
+
+  }
+}

@@ -1,0 +1,287 @@
+/* Ion.RangeSlider
+// css version 2.0.3
+// Â© 2013-2014 Denis Ineshin | IonDen.com
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// RangeSlider */
+
+.irs {
+    position: relative; display: block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+    .irs-line {
+        position: relative; display: block;
+        overflow: hidden;
+        outline: none !important;
+    }
+        .irs-line-left, .irs-line-mid, .irs-line-right {
+            position: absolute; display: block;
+            top: 0;
+        }
+        .irs-line-left {
+            left: 0; width: 11%;
+        }
+        .irs-line-mid {
+            left: 9%; width: 82%;
+        }
+        .irs-line-right {
+            right: 0; width: 11%;
+        }
+
+    .irs-bar {
+        position: absolute; display: block;
+        left: 0; width: 0;
+    }
+        .irs-bar-edge {
+            position: absolute; display: block;
+            top: 0; left: 0;
+        }
+
+    .irs-shadow {
+        position: absolute; display: none;
+        left: 0; width: 0;
+    }
+
+    .irs-slider {
+        position: absolute; display: block;
+        cursor: default;
+        z-index: 1;
+    }
+        .irs-slider.single {
+
+        }
+        .irs-slider.from {
+
+        }
+        .irs-slider.to {
+
+        }
+        .irs-slider.type_last {
+            z-index: 2;
+        }
+
+    .irs-min {
+        position: absolute; display: block;
+        left: 0;
+        cursor: default;
+    }
+    .irs-max {
+        position: absolute; display: block;
+        right: 0;
+        cursor: default;
+    }
+
+    .irs-from, .irs-to, .irs-single {
+        position: absolute; display: block;
+        top: 0; left: 0;
+        cursor: default;
+        white-space: nowrap;
+    }
+
+.irs-grid {
+    position: absolute; display: none;
+    bottom: 0; left: 0;
+    width: 100%; height: 20px;
+}
+.irs-with-grid .irs-grid {
+    display: block;
+}
+    .irs-grid-pol {
+        position: absolute;
+        top: 0; left: 0;
+        width: 1px; height: 8px;
+        background: #000;
+    }
+    .irs-grid-pol.small {
+        height: 4px;
+    }
+    .irs-grid-text {
+        position: absolute;
+        bottom: 0; left: 0;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 9px;
+        padding: 0 3px;
+        color: #000;
+    }
+
+.irs-disable-mask {
+    position: absolute; display: block;
+    top: 0; left: -1%;
+    width: 102%; height: 100%;
+    cursor: default;
+    background: rgba(0,0,0,0.0);
+    z-index: 2;
+}
+.lt-ie9 .irs-disable-mask {
+    background: #000;
+    filter: alpha(opacity=0);
+    cursor: not-allowed;
+}
+
+.irs-disabled {
+    opacity: 0.4;
+}
+
+
+.irs-hidden-input {
+    position: absolute !important;
+    display: block !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    outline: none !important;
+    z-index: -9999 !important;
+    background: none !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+}
+
+
+
+
+///////////////
+// Endringer //
+///////////////
+
+
+
+
+.search-date-slider {
+  // width: 80vw;
+  margin: 10vw;
+  // font-family: helvetica;
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+
+.irs-min, .irs-max {
+  display: none;
+}
+.irs-min::before {
+  content: 'Arkiv';
+  position: absolute;
+  bottom: 2vw;
+  left: 0;
+
+}
+
+
+
+
+
+.irs-from::before {
+  content: ''; // FRA
+  // position: absolute;
+  // // bottom: 2vw;
+  // // font-size: 1vw;
+  // left: 0;
+}
+.irs-to::before {
+  content: ''; // TIL
+  // // position: absolute;
+  // // bottom: 2vw;
+  // // font-size: 1vw;
+  // left: 0;
+}
+
+
+
+
+
+
+.irs-max, .irs-min, .irs-from, .irs-single, .irs-to  {
+    // color: red;
+    top: 0px;
+    padding: 0px;
+    background: transparent;
+    border-radius: 0px;
+    cursor: col-resize;
+}
+// .irs-max::after, .irs-min::after, .irs-from::after, .irs-single::after, .irs-to::after {
+//   content: '';
+//   padding-bottom: 2vw;
+//   position: relative;
+// }
+
+.irs-from:after, .irs-single:after, .irs-to:after {
+  display: none;
+}
+
+.irs-slider {
+    width: 0.3vw;
+    height: 1vw;
+    top: 2.5vw;
+    top: 0;
+    // background: red;
+    z-index: -1;
+    //display: none;
+}
+.irs-bar {
+  mix-blend-mode: multiply;
+  // mix-blend-mode: difference;
+  // mix-blend-mode: hue;
+    height: 1vw;
+      height: 0.3vw;
+      // height: 2vw;
+      height: 0.6vw;
+      top: 2.4vw;
+      top: 2.2vw;
+      // top: 1vw;
+      // background: $secondary-color;
+      // background: red;
+      background-image:
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black  75%, black),
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+        linear-gradient(transparent,transparent);
+    background-size: 4px 4px, 4px 4px, 100% 100%;
+    background-position: 0px 0px, 2px 2px, 0px 0px;
+
+      opacity: 1;
+  // display: none;
+}
+.irs-line-left, .irs-line-mid, .irs-line-right {
+  display: none;
+}
+.irs-line {
+    height: 1px;
+    top: 2.55vw;
+    background: #000;
+    display: none;
+}
+.irs-grid {
+    height: 2vw;
+    top: 2.2vw;
+    left: 0vw!important;
+}
+
+.irs-grid-pol {
+    top: 0vw;
+    left: 0;
+    width: 0.3vw;
+    height: 0.5vw;
+    background: $color;
+    // background: $secondary-color;
+}
+.irs-grid-pol.small {
+    height: 0.5vw;
+    top: -0.75vw;
+    display: none;
+}
+.irs-grid-text {
+    color: #000;
+  display: none;
+}

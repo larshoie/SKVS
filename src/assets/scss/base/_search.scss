@@ -1,0 +1,159 @@
+.big-search {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: $light;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 999;
+  .modal-wrap {
+    position: static;
+    padding-bottom: 10vh;
+  }
+  form {
+    position: fixed;
+    //top: 5vw;
+    top: 15vh;
+    left: 0vw;
+    right: 0vw;
+    width: 100%;
+    background: $light;
+    //z-index: 1999;
+    z-index: 99;
+    padding: 30vh 2vw 2vw 2vw;
+  }
+  input[type=search], #search {
+    border-bottom: none;
+    position: relative;
+    width: 100%;
+    //left: -0.5vw;
+    left: 0;
+  }
+}
+.big-search::-webkit-scrollbar {
+  //width: 3px;
+  width: 0;
+}
+
+.big-search::-webkit-scrollbar-track {
+  //background: $light;
+  background: transparent;
+}
+
+.big-search::-webkit-scrollbar-thumb {
+  //background: $ident;
+  background: transparent;
+}
+
+#tipue_drop_content {
+  // display: none;
+  // position: absolute;
+  // margin: 0;
+  // line-height: 0;
+  // z-index: 1000;
+}
+.tipue_drop_box {
+  // position: relative;
+  padding: 20vh 2vw 2vw 2vw;
+  padding: 20vh 1vw 1vw 1vw;
+
+}
+#tipue_drop_wrapper {
+  a {
+    width: 33.33333%;
+    //padding: 0 1vw 1vw 1vw;
+    padding: 0 1vw 2vw 1vw;
+    float: left;
+    border: none;
+    //img {height: 50vh;}
+  }
+}
+.tipue_drop_item {
+  //?
+}
+
+.search-image {
+  width: 100%;
+  height: 50vh;
+  //height: 30vh;
+  object-fit: cover;
+  //filter: grayscale(100%);
+  //transition: filter .2s;
+  margin-bottom: 1vw;
+}
+.search-image:hover {
+  //filter: grayscale(0%);
+  //transition: filter .2s;
+}
+
+.tipue_drop_right {
+  //width: 70%;
+}
+
+.search-title {
+  //text-decoration: underline;
+  display: inline;
+  //background: yellow;
+  border-bottom: 1px solid $ident;
+}
+
+// ::-webkit-input-placeholder {text-indent: 2px;}
+input:focus::-webkit-input-placeholder  {
+  text-indent: 2px;
+  //border-bottom: 1px solid $ident;
+}
+
+
+
+// width: 50%;
+// z-index: 999;
+// position: fixed;
+// top: 0;
+// padding-top: 4vw;
+// padding: 4vw 2vw 0;
+// height: 9vw;
+// float: right;
+// right: 0;
+
+
+
+
+.date-picker {
+  //width: 80%;
+  width: 78.9%; //hvis august 2006 er startmåned
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 4vw;
+  padding: 4vw 2vw 0;
+  height: 9vw;
+}
+
+.search-options {
+  width: 10%;
+  position: fixed;
+  left: 2vw;
+  top: 4vw;
+  z-index: 999;
+  span {
+    cursor: pointer;
+  }
+}
+
+.close {
+  // position: fixed;
+  // bottom: 2vw;
+  // left: 2vw;
+  // padding: 1vw 1vw 0.8vw 1vw;
+  // padding: 0;
+  border-bottom: 1px solid;
+  // cursor: pointer;
+  // z-index: 3000;
+  &:hover {
+    border-color: $ident;
+  }
+}

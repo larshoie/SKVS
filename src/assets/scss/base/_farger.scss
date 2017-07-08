@@ -1,0 +1,12 @@
+// Farger
+
+$main: #000000;
+$white: #ffffff;
+$ident: darken( #f0e9cc, 10% );
+$ident-light: lighten($ident, 10%);
+//$ident: salmon;
+//$ident: #fff;
+//$ident: rgb(150,200,150);
+$light: lighten( $ident, 21% );
+$blue: #8bb4d2;
+$light-blue: #eaf0f7;

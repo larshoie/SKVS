@@ -1,0 +1,183 @@
+//// V3 / V4
+
+
+.main-content {
+  margin-top: 0;
+}
+
+.main-content:last-child {
+  padding-bottom: 15vh;
+}
+
+.artikkel {
+  letter-spacing: 0.2px;
+
+  h1 {
+    padding-left: 1.5vw;
+    padding-top: 6vw;
+    position: relative;
+    z-index: 2;
+  }
+  .tittel {
+    font-size: 6vw;
+    font-size: 14.9vw;
+    margin: 0;
+    width: 100%;
+    letter-spacing: 1px;
+    line-height: 0.85;
+    text-transform: uppercase;
+    color: $ident;
+  }
+  p {
+    width: 60vw;
+    font-size: 2vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    top: 0;
+  }
+  // figure {
+  //   margin: 3vw 0;
+  //   float: left;
+  //   //width: 100%;
+  //   overflow: hidden;
+  //   display: flex;
+  //   -ms-flex-pack: center;
+  //   justify-content: center;
+  //   width: 80%;
+  //   padding-left: 20vw;
+  //   img {
+  //     object-fit: contain !important;
+  //     align-self: center;
+  //     max-height: 80vh;
+  //     max-width: 45vw;
+  //     object-position: top right;
+  //   }
+    // figcaption {
+    //   display: block;
+    //   line-height: 1.25;
+    //   width: 15vw;
+    //   position: relative;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   margin-left: 0;
+    //   padding-left: 2vw;
+    //   margin-right: 0;
+    //   font-size: 0.8vw;
+    //   align-self: flex-end;
+    // }
+  //}
+
+}
+
+
+
+
+
+
+
+.tittel {
+  font-family: "tungsten Condensed";
+  font-weight: 700;
+  font-size: 19.8vw!important;
+  line-height: 0.8!important;
+  //mix-blend-mode: multiply!important;
+  //z-index: 1!important;
+  transition: opacity 200ms;
+  /////////
+  /////////
+  /////////
+  /////////
+  font-family: $fontAlt;
+  font-weight: normal;
+  font-size: 14.8vw!important;
+  font-size: 15.6vw!important;
+  line-height: 0.88!important;
+  letter-spacing: -0.2vw!important;
+  /////////
+  /////////
+  /////////
+  /////////
+  // font-family: "mekanik";
+  // font-weight: normal;
+  // font-size: 24vw!important;
+  // line-height: 0.8!important;
+  // letter-spacing: -0.5vw!important;
+
+}
+.hidetitle {
+  z-index: 1!important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms;
+  .tittel {
+    //color: $ident;
+  }
+}
+
+.main-content {
+  opacity: 1;
+}
+
+article {
+  //background: $white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+blockquote {
+  display: none;
+
+  width: 37vw;
+  position: relative;
+  z-index: 1;
+  float: left;
+  font-family: "league gothic";
+  font-weight: normal;
+  font-size: 3vw;
+  margin: 0;
+  padding-right: 1vw;
+  text-transform: uppercase;
+  line-height: 1!important;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-indent: -1.4vw;
+  margin: 1rem 0;
+}
+blockquote:before {
+  content: open-quote;
+  line-height: 0.1em;
+  margin-right: 0;
+  vertical-align: 0;
+}
+blockquote:after {
+  content: close-quote;
+  line-height: 0.1em;
+  margin-right: 0;
+  vertical-align: 0;
+}
+
+
+
+
+header {
+  figure {
+    position: relative;
+    z-index: 1;
+    //top: -10rem;
+    //margin-top: -7rem!important;
+    ////margin-top: 8rem!important;
+    margin-top: 10.3vmax !important;
+  }
+}

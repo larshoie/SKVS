@@ -1,0 +1,57 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInFromWhite {
+  0% { opacity: 0; }
+  100% { opacity: 0.7; }
+}
+
+// AJAX
+.container .content {
+  animation-duration: 0.1s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.container .content {
+  animation-name: fadeIn;
+}
+
+.is-exiting {
+  animation-name: fadeIn;
+}
+
+.container.is-exiting .content {
+  animation-direction: alternate-reverse;
+}
+
+
+// SOCIAL MEDIA
+@keyframes selectionSharerPopover-animation {
+  0%{
+  transform:matrix(0.97,0,0,1,0,12);
+  filter:alpha(opacity=0);
+  opacity:0
+  }
+  20%{
+  transform:matrix(0.99,0,0,1,0,2);
+  filter:alpha(opacity=70);
+  opacity:.7
+  }
+  40%{
+  transform:matrix(1,0,0,1,0,-1);
+  filter:alpha(opacity=100);
+  opacity:1
+  }
+  70%{
+  transform:matrix(1,0,0,1,0,0);
+  filter:alpha(opacity=100);
+  opacity:1
+  }
+  100%{
+  transform:matrix(1,0,0,1,0,0);
+  filter:alpha(opacity=100);
+  opacity:1
+  }
+}
